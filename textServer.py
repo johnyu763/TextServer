@@ -52,7 +52,7 @@ class SocketHandler(Thread):
             cmd = ""
             try:
                 debug("Calling blocking conn.recv()")
-                cmd = self.conn.recv(1024).decode()
+                #cmd = self.conn.recv(1024).decode()
                 print("received command", cmd, "LENGTH:", len(cmd))
             except:
                 debug("exception in conn.recv()") 
